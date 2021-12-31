@@ -30,6 +30,7 @@ $mail->Port       = 465;
 
 //Recipients
 $mail->addAddress('nesanoctact@gmail.com', 'nesamani');
+$mail->addAddress('kalpana@vgts.tech', 'kalpana');
 $mail->SetFrom('fromgmail@gmail.com', 'My Harvest');                                
 $mail->Subject = 'Here is the subject';
 $mail->Body=

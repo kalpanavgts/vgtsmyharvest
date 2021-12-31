@@ -51,21 +51,11 @@ $("#formvalidation")
   });
 
 function callApicall(fordata) {
-  //Button load
-  document.getElementById("submitbtn").disabled = true;
+   //Button load
+   document.getElementById("submitbtn").disabled = true;
 
-  $.ajax({
-    url: "backend/mail/sendmail.php",
-    data: fordata,
-    cache: false,
-    contentType: false,
-    processData: false,
-    method: "POST",
-    type: "POST",
-    success: function (data) {
-      document.getElementById("formvalidation").reset();
-      document.getElementById("submitbtn").disabled = false;
-      alert("File has been sent");
-    },
-  });
+   $.post("backend/mail/sendmail.php", fordata, function (sucdata) {
+     document.getElementById("formvalidation").reset();
+     document.getElementById("submitbtn").disabled = false;
+   });
 }
