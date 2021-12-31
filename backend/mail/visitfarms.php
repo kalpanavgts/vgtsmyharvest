@@ -16,7 +16,8 @@ try {
 $name = $_REQUEST['name'];
 $mobile = $_REQUEST['contactnumber'];
 $email = $_REQUEST['mail'];
-$location = $_REQUEST['location'];
+$month = $_REQUEST['month'];
+$whoareyou = $_REQUEST['whoareyou'];
 //HTTP Request parse end
 
 $mail->isSMTP(); 
@@ -44,7 +45,8 @@ $mail->Body=
 Name : ".$name." <br/>
 Email : ".$email." <br/>
 Mobile : ".$mobile." <br/>
-Location : ".$location." <br/>
+Tentative Month : ".$month." <br/>
+Whoareyou : ".$whoareyou." <br/>
 </body>
 </html>
 ";
