@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>myHarvest Farms</title>
+    <link href="css/tailwind.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css">
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" type="text/css">
+    <link href="font/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/aos.css" rel="stylesheet" type="text/css">
+    <link href="img/fav-icon.svg" type="img/svg" rel="icon">    
+    <style>
+        .slide:nth-child(1) {
+            left: 0 !important;
+        }
+        .slide:nth-child(1) .slide__bg {
+        left: 0 !important;
+        background-image: url("img/community_banner_img.png") !important;
+        }
+        .slide:nth-child(1) .slide__overlay-path {
+        fill: #e99c7e;
+        }
+        .slider-height
+        {
+            height: 75vh !important;
+        }
+    </style>
+    
+</head>
+
+<body id="page" class="overflow-x-hidden home page-template-default page page-id-2">
+      
+    <div>
+        <!-- Topbar Start  -->
+        <div class="flex-1 flex flex-col">
+            <nav class="px-4 2xl:px-12 xl:px-10 lg:px:8 md:6 flex justify-between bg-white h-10 topbar">
+  
+               <!-- top bar left  -->
+                <div class=" flex items-center capitalize dark:text-gray-300 top_menu_section">
+                    <a href="deliveryArea.html" class="  ml-0.5 mr-2 sm:mr-5 active">Delivery Areas</a>
+  
+                    <a href="visitfarms.html" class=" dark:hover:text-gray-200  mx-2 sm:mx-5"> Visit Farm </a>
+  
+                    <a href="galleryfile.html" class="mx-2 sm:mx-5">Gallery </a>
+                    
+                    <a href="media-recognition.html" class="mx-2 sm:mx-5"> Media and Recognition</a>
+  
+                    <!-- <a href="https://myharvestfarms.com/faq" class="mx-2 sm:mx-5">FAQ </a> -->
+                </div>
+  
+                <!-- to bar right  -->
+                <ul class="sm:flex items-center hidden ">
+                    <li class="flex justify-center items-center">
+                        <a href="tel: 8220043502" class="text-gray-800 text-sm r-0.5 sm:mr-0.5">
+                            <i class="fa fa-phone float-left" aria-hidden="true"style="font-size:16px;padding-top:2px"></i>
+                            <p class="float-left" style="padding-left: 5px;font-weight: 600;">8220043502</p>
+                        </a>
+                    </li>
+                </ul>
+  
+            </nav>
+        </div>
+    <!-- Topbar End -->
+  <!-- Navigation Bar Start -->
+  <div x-data="{ isOpen: false }" class="relative bg-white sticky-block header-area"  id="header_top">
+      <div class=" mx-auto px-4 2xl:px-12 xl:px-10 lg:px:8 md:6 sm:block hidden">
+          <div class="flex justify-between items-center  py-4 lg:justify-start 2xl:space-x-12  xl:space-x-10 md:space-x-8">
+              <div class="flex justify-start lg:w-0 lg:flex-1 xl:-mr-28">
+                  <a href="https://myharvestfarms.com/" class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+                      <div class="flex-shrink-0 flex items-center">
+                          <img class=" logo-width " src="img/Logo.png" alt="">
+                      </div>
+                  </a>
+              </div>
+  
+              <button @click="isOpen = !isOpen" type="submit">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-white lg:hidden" fill="none"
+                      viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16" />
+                  </svg>
+              </button>
+                  
+  
+              <div class="-mr-2 flex -my-2 lg:hidden">
+                  <div class="bg-white flex items-center  search-background mobile-search-background ml-8 ">
+                      <div class="pl-2 sm:block hidden">
+                          <button
+                              class="text-white rounded-full p-1  focus:outline-none w-8 h-8 flex items-center justify-center">
+                              <i class="fa fa-search search-color" aria-hidden="true"></i>
+                          </button>
+                      </div>
+                      <input
+                          class="rounded-l-full sm:block hidden w-full py-2 pr-2 search-background   text-gray-700 leading-tight focus:outline-none"
+                          id="search1" type="text" placeholder="(Veg, Fruits...">
+                  </div>
+                  <a href="https://shop.myharvestfarms.com/"
+                      class="all-button ml-6 mx-2 sm:inline-flex hidden whitespace-nowrap inline-flex button-color items-center justify-center px-4 py-1 border border-transparent rounded shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                      SHOP NOW
+                  </a>
+                  <button type="button"
+                      class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+                      aria-expanded="false">
+                      <span class="sr-only">Open menu</span>
+                      <!-- Heroicon name: outline/menu -->
+                      <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                          stroke="currentColor" aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h16" />
+                      </svg>
+                  </button>
+              </div>
+              <nav class="hidden lg:flex 2xl:space-x-10  xl:space-x-6 md:space-x-4 sm:space-x-2">
+                  <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+                  <a href="about-us.html" type="button"
+                      class="text-header xl:text-sm lg:text-xs	 font-medium hover:text-gray-900"
+                      aria-expanded="false">
+                      About Us
+                  </a>
+                  <a href="ourfarmers.html" type="button"
+                  class="text-header xl:text-sm lg:text-xs	 font-medium hover:text-gray-900"
+                  aria-expanded="false">
+                  Our Farmers
+              </a>
+                  <a href="https://myharvestfarms.com/product-list/" class="xl:text-sm lg:text-xs text-header  font-medium  hover:text-gray-900">
+                      Veg & Fruits
+                  </a>
+                  <div class="relative product-list leading-none pb-4 -mb-4">
+                      <!-- Item active: "text-gray-900", Item inactive: "text-gray-500" -->
+                      <a href="#"
+                          class=" xl:text-sm lg:text-xs hover:text-gray-900  text-header text-gray-500 group bg-white rounded-md inline-flex items-center font-medium "
+                          aria-expanded="false">
+                          Products List
+                          <svg class="text-black h-5 w-5 group-hover:text-gray-500" xmlns="http://www.w3.org/2000/svg"
+                              viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                              <path fill-rule="evenodd"
+                                  d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                  clip-rule="evenodd" />
+                          </svg>
+                      </a>
+  
+                      <!--
+                      'More' flyout menu, show/hide based on flyout menu state.
+  
+                      Entering: "transition ease-out duration-200"
+                      From: "opacity-0 translate-y-1"
+                      To: "opacity-100 translate-y-0"
+                      Leaving: "transition ease-in duration-150"
+                      From: "opacity-100 translate-y-0"
+                      To: "opacity-0 translate-y-1"
+                  -->
+                      <div
+                          class="product-dropdown  absolute z-10 left-1/2 transform -translate-x-1/2 mt-3 px-2 w-screen max-w-md sm:px-0">
+                          <div class="ring-1 ring-black ring-opacity-5 overflow-hidden">
+                              <div class="relative grid bg-white px-3 py-3 gap-4 sm:p-4 sub_menu">
+  
+                                  <a href="https://shop.myharvestfarms.com/product-category/oil-ghee/" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                      <!-- Heroicon name: outline/bookmark-alt -->
+                                      <div class="ml-4">
+                                          <p class="text-header xl:text-sm lg:text-xs	 font-medium hover:text-gray-900">
+                                              Oil-Ghee
+                                          </p>                                     
+                                      </div>
+                                  </a>
+  
+                                  <a href="https://shop.myharvestfarms.com/product-category/salt-jaggery-honey/" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                      <!-- Heroicon name: outline/calendar -->
+                                     
+                                      <div class="ml-4">
+                                          <p class="text-header xl:text-sm lg:text-xs	 font-medium hover:text-gray-900">
+                                              Salt-Jaggery-Honey
+                                          </p>
+                                      </div>
+                                  </a>
+  
+                                  <a href="https://shop.myharvestfarms.com/product-category/rice/" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                      <!-- Heroicon name: outline/shield-check -->
+                                     
+                                      <div class="ml-4">
+                                          <p class="text-header xl:text-sm lg:text-xs	 font-medium hover:text-gray-900">
+                                              Rice, Millets & pulses
+                                          </p>                                      
+                                      </div>
+                                  </a>
+  
+                                  <a href="https://shop.myharvestfarms.com/product-category/flours-mixes/" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                      <!-- Heroicon name: outline/shield-check -->
+                                     
+                                      <div class="ml-4">
+                                          <p class="text-header xl:text-sm lg:text-xs	 font-medium hover:text-gray-900">
+                                              Flours, mixes & Flakes
+                                          </p>                                      
+                                      </div>
+                                  </a>
+                                  <a href="https://shop.myharvestfarms.com/product-category/spices-nuts/" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                      <!-- Heroicon name: outline/shield-check -->
+                                     
+                                      <div class="ml-4">
+                                          <p class="text-header xl:text-sm lg:text-xs	 font-medium hover:text-gray-900">
+                                              Grocery, Spices & Nuts
+                                          </p>                                      
+                                      </div>
+                                  </a>
+  
+                                  <a href="https://shop.myharvestfarms.com/product-category/snacks/" class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                                      <!-- Heroicon name: outline/shield-check -->
+                                     
+                                      <div class="ml-4">
+                                          <p class="text-header xl:text-sm lg:text-xs	 font-medium hover:text-gray-900">
+                                              Sweet, Snacks & Tea
+                                          </p>                                      
+                                      </div>
+                                  </a>
+  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <a href="join-myharvest.html"
+                      class="xl:text-sm lg:text-xs text-header  font-medium text-gray-500 hover:text-gray-900">
+                      Join Myharvest
+                  </a>
+              </nav>
+              <div class="hidden lg:flex items-center justify-end md:flex-1  lg:w-0">
+                  <div class="bg-white flex items-center  search-background ">
+                      <div class=" pl-2 xl:block lg:hidden md:hidden ">
+                          <button
+                              class="text-white rounded-full p-1  focus:outline-none w-8 h-8 flex items-center justify-center">
+                              <i class="fa fa-search search-color" aria-hidden="true"></i>
+                          </button>
+                      </div>
+                      <input
+                          class="rounded-l-full xl:block lg:hidden md:hidden w-full pb-2 pt-1 pr-2 search-background   text-gray-700 leading-tight focus:outline-none"
+                          id="search" type="text" placeholder="(Veg, Fruits...">
+                  </div>
+                  <a href="https://shop.myharvestfarms.com/"
+                      class="all-button ml-8 whitespace-nowrap inline-flex button-color items-center justify-center px-4 py-1 border border-transparent rounded shadow-sm text-base font-semi bold text-white bg-indigo-600 hover:bg-indigo-700 ">
+                      SHOP NOW
+                  </a>
+              </div>
+          </div>
+      </div>
+  
+      <!--
+      Mobile menu, show/hide based on mobile menu state.
+  
+      Entering: "duration-200 ease-out"
+      From: "opacity-0 scale-95"
+      To: "opacity-100 scale-100"
+      Leaving: "duration-100 ease-in"
+      From: "opacity-100 scale-100"
+      To: "opacity-0 scale-95"
+  -->
+      <div x-data="{ isOpen: false }" class="absolute top-0 inset-x-0 transition transform origin-top-right sticky-block" style="z-index:99;">
+          <div class=" bg-white divide-y-2 divide-gray-50">
+              <div class="p-4 sm:hidden block">
+                  <div class="flex items-center justify-between">
+                      <div class="sm:order-none order-2">  
+                          <img class="logo-width" src="img/Logo.png" alt="Workflow">
+                      </div>
+                      <div class="-mr-2 sm:order-none	order-1" style="height: 23px;">
+                          <button @click="isOpen = !isOpen" type="submit">
+                              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 lg:hidden" fill="none"
+                                  viewBox="0 0 24 24" stroke="currentColor">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M4 6h16M4 12h16M4 18h16" />
+                              </svg>
+                          </button>
+                      </div>
+                      <div class="sm:order-none order-3">
+                          <a href="https://shop.myharvestfarms.com/"><div class="trash-img">
+                              <img src="img/trash-img.svg">
+                              <div>
+                                  <p>0</p>
+                              </div>
+                          </div></a>                   
+                      </div>
+                  </div>
+                  <div class="mt-6"  x-show="isOpen"
+                  @click.away=" isOpen = false">
+                      <nav class="grid gap-y-4">
+                          <a href="about-us.html" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                              <!-- Heroicon name: outline/chart-bar -->
+                              <span class="ml-3 text-base font-medium text-gray-900">
+                                  About Us
+                              </span>
+                          </a>
+  
+                          <a href="media-recognition.html" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                              <!-- Heroicon name: outline/cursor-click -->
+                              <span class="ml-3 text-base font-medium text-gray-900">
+                                  Media
+                              </span>
+                          </a>
+  
+                          <a href="https://myharvestfarms.com/product-list/" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                              <!-- Heroicon name: outline/shield-check -->
+                              <span class="ml-3 text-base font-medium text-gray-900">
+                                  Veg & Fruits
+                              </span>
+                          </a>
+  
+                          <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                              <!-- Heroicon name: outline/view-grid -->
+                              <span class="ml-3 text-base font-medium text-gray-900">
+                                  Products List
+                              </span>
+                          </a>
+                          <a href="join-myharvest.html" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                              <!-- Heroicon name: outline/refresh -->
+                              <span class="ml-3 text-base font-medium text-gray-900">
+                                  Join Myharvest
+                              </span>
+                          </a>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- Navigation bar End -->
+  </div>
+    <!-- Banner section Start -->
+    <div class="h-90vh">
+        <div id="backto-top" data-cues="fadeIn" class="sm:gap-2 gap-2 pt-0 sm:pt-0 sm:p-4 p-0 h-74vh">
+            <div class="sm:px-0 px-4 slider-height padding_right_block">
+                <!--        <img class="inline w-full h-full object-cover" src="img/Fresh From Our Farmers.png" alt="...">-->
+                <div class="slider-container" style="overflow: hidden">
+                    <div class="slider-control left inactive"></div>
+                    <div class="slider-control right"></div>
+                    <ul class="slider-pagi"></ul>
+                    <div class="slider">
+                        <div class="slide slide-1 ">
+                            <div class="slide__bg"></div>
+                            <div class="slide__content">
+                                <!-- <div class="slide__text">
+                                    <h2 class="slide__text-heading">Discover Real Organic Flavours</h2>
+                                    <a href="https://shop.myharvestfarms.com/" class="all-button slide__text-link">SHOP NOW</a>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="slide slide-2">
+                            <div class="slide__bg"></div>
+                            <div class="slide__content">
+                                <div class="slide__text">
+                                    <h2 class="slide__text-heading">Safe Food trusted by 3000+ families</h2>
+                                    <a href="https://shop.myharvestfarms.com/" class="all-button slide__text-link">SHOP NOW</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" sm:px-0 px-4 slider-height" style="width: 30%;">
+                <div class=" row_block" style="height:100%;background-color:#FBF4EA ;padding: 30px;    display: flex;
+                align-items: center;
+                justify-content: center;">
+                    <div class="col-start-12">
+                        <div class="get_in_touch">
+                            <h1 style="text-align: center;margin-bottom:20px;">Get In Touch</h1>
+                            <h6>Thus Began The Service Of My Harvest Farms. Now We Are An Ecosystem That Connects N Number Of Urban Farmers And A Community.</h6>
+                        </div>
+                        <form class="contact_form_block mt-6">
+                         <div class="grid grid-cols-12 gap-3 gap-y-3">
+                             <div class="sm:col-span-12 w-full float-left">
+                                 <label>Name</label>
+                                 <input id="name" type="text" placeholder="Enter Your Name">            
+                             </div> 
+                         </div>
+                         <div class="grid grid-cols-12 gap-3 gap-y-3">
+                             <div class="sm:col-span-12 w-full float-left">
+                                 <label>Email address</label>
+                                 <input id="name" type="text" placeholder="Enter Your Email">            
+                             </div> 
+                         </div>
+                         <div class="grid grid-cols-12 gap-3 gap-y-3">
+                             <div class="sm:col-span-12 w-full float-left">
+                                 <label>Contact Number</label>
+                                 <input id="name" type="text" placeholder="Enter Your Phone">            
+                             </div>  
+                         </div>
+                         <div class="grid grid-cols-12 gap-3 gap-y-3">
+                             <div class="sm:col-span-12 w-full float-left">
+                                 <label>Location</label>
+                                 <input id="name" type="text" placeholder="Enter Your Location">            
+                             </div>  
+                         </div>
+                         <div class="contact_submmit_button">
+                             <button>Submit Now</button>
+                         </div>
+                        </form>
+                     </div>
+                </div>
+            </div>
+        </div>
+    
+    </div> 
+     <!-- Banner section End -->
+     <div>
+
+
+
+           
+    <!-- Our Product section start -->
+    <div class="grid grid-cols-12 gap-3 sm:gap-y-6 gap-y-3 ourproduct-section padding_top_harvest" data-cues="fadeIn" style="padding-top: 0px;">
+        <div
+            class=" sm:pb-0 2xl:col-start-3  lg:col-start-2 col-start-1  2xl:col-span-8 lg:col-span-10  col-span-12  text-center">
+            <h2 class="w-full float-left">Our Products </h2>
+            <h5 class="w-full float-left  pt-2 pb-4 sm:block hidden">Food Is Medicine. Give Your Family The Best Food
+                That's Closer To Nature. <br>Real Taste & Nutrition Heals The Body & Mind.</h5>
+        </div>
+        <div class="sm:col-span-3 col-span-12 relative product-list">
+            <a href="https://shop.myharvestfarms.com/"><img class="float-left w-full h-full object-cover height_area" src="img/Greens%20&%20Herbs.png" alt="">
+            <div class="absolute sm:top-12 top-20 w-full float-left text-center">
+                <h3 class="w-full float-left text-center" >Greens & Herbs</h3>
+                <p class="border-b-2 w-24  m-auto" style="font-size:4px;">&nbsp;</p>
+                <a href="https://shop.myharvestfarms.com/"
+                    class=" mt-4 all-button mx-2 sm:inline-flex hidden whitespace-nowrap inline-flex button-color items-center justify-center px-4 py-1 border border-transparent rounded shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                    SHOP NOW
+                </a>
+            </div></a>
+            <a href="https://shop.myharvestfarms.com/"><div class="sm:hidden block">
+                <i class="fa fa-arrow-right ourproduct_icons" aria-hidden="true"></i>
+            </div></a>
+        </div>
+        <div class="sm:col-span-6 col-span-12">
+            <div class="sm:grid grid-rows-2 gap-3 block">
+                <div class="grid grid-cols-12">
+                    <div class="col-span-12 product-list relative sm:mb-0 mb-3">
+                        <a href="https://shop.myharvestfarms.com/"><img class="float-left w-full h-full object-cover " src="img/Vegetables%20&%20Fruits.png"
+                            alt="">
+                        <div class="absolute top-1/2 transform -translate-y-1/2 w-full float-left  pl-6">
+                            <h3 class="w-full float-left">Vegetables & <br>Fruits</h3>
+                            <div class="w-full float-left">
+                                <p class="border-b-2 w-24  float-left" style="font-size:4px;">&nbsp;</p>
+                            </div>
+                            
+                            <a href="https://shop.myharvestfarms.com/"
+                            class=" mt-4 all-button mt-2 sm:inline-flex hidden whitespace-nowrap inline-flex button-color items-center justify-center px-4 py-1 border border-transparent rounded shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                            SHOP NOW
+                        </a>
+                        <a href="https://shop.myharvestfarms.com/"><div class="sm:hidden block ">
+                                <i class="fa fa-arrow-right absolute top-1/2 transform -translate-y-1/2  sm:hidden ourproduct_icons "
+                                    aria-hidden="true"></i>
+                            </div></a>
+                        </div></a>
+                    </div>
+                </div>
+                <div class="grid grid-cols-12 gap-3">
+                    <div class="sm:col-span-6 col-span-12 relative product-list">
+                        <a href="https://shop.myharvestfarms.com/"><img class="float-left w-full h-full object-cover height_block"
+                            src="img/Chemical%20Free%20Groceries.png" alt="">
+                        <div class="absolute top-1/2 transform -translate-y-1/2 w-full float-left  sm:pr-6 pl-6">
+                            <h3 class="w-full float-left text-left">Country Chicken <br>Eggs</h3>
+                            <div class="w-full float-left">
+                                <p class="border-b-2 w-24  float-left" style="font-size:4px;">&nbsp;</p>
+                            </div>
+                                <a href="https://shop.myharvestfarms.com/"
+                                class=" mt-4 all-button mt-2 sm:inline-flex hidden whitespace-nowrap inline-flex button-color items-center justify-center px-4 py-1 border border-transparent rounded shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                                SHOP NOW
+                            </a>
+                            <a href="https://shop.myharvestfarms.com/"><div class=" sm:hidden block">
+                                    <i class="fa fa-arrow-right absolute top-1/2 transform -translate-y-1/2 ourproduct_icons"
+                                        aria-hidden="true"></i>
+                                </div></a>
+                        </div></a>
+                    </div>
+                    <div class="sm:col-span-6 col-span-12 relative product-list">
+                        <a href="https://shop.myharvestfarms.com/"><img class="float-left w-full h-full object-cover height_block"
+                            src="img/Healthy%20Snacks%20&%20Sweets.png" alt="">
+                        <div
+                            class="absolute top-1/2 transform -translate-y-1/2 w-full text-right  sm:pr-6 pl-6">
+                            <h3 class="w-full sm:text-right text-left" >Healthy Snacks &
+                                <br>Sweets
+                            </h3>
+                            <div class="w-full float-right">
+                                <p class="border-b-2 w-24  sm:float-right float-left" style="font-size:4px;">
+                                    &nbsp;</p>
+                            </div>
+                            
+                                <a href="https://shop.myharvestfarms.com/"
+                                class=" mt-4 all-button mt-2 sm:inline-flex hidden whitespace-nowrap inline-flex button-color items-center justify-center px-4 py-1 border border-transparent rounded shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                                SHOP NOW
+                            </a>
+                            <a href="https://shop.myharvestfarms.com/"><div class=" sm:hidden block">
+                                <i class="fa fa-arrow-right absolute top-1/2 transform -translate-y-1/2 ourproduct_icons"
+                                    aria-hidden="true"></i>
+                            </div></a>
+                        </div></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+       
+        <div class="sm:col-span-3 col-span-12 product-list relative">
+            <a href="https://shop.myharvestfarms.com/"><img class="float-left w-full h-full object-cover height_area" src="img/Country%20Chicken%20Eggs.png"
+                alt="">
+
+                <div class="absolute sm:top-12 top-20 w-full float-left text-center">
+                    <h3 class="w-full float-left text-center">Chemical Free <br>Groceries</h3>
+                    <p class="border-b-2 w-24  m-auto" style="font-size:4px;">&nbsp;</p>
+                    <a href="https://shop.myharvestfarms.com/" class=" mt-4 all-button mx-2 sm:inline-flex hidden whitespace-nowrap inline-flex button-color items-center justify-center px-4 py-1 border border-transparent rounded shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                        SHOP NOW
+                    </a>
+                </div> </a>        
+            </div>
+            <a href="https://shop.myharvestfarms.com/"><div class="sm:hidden block">
+                <i class="fa fa-arrow-right ourproduct_icons" aria-hidden="true"></i>
+            </div></a>
+        </div>
+    </div>
+    <!-- our product Section End -->
+
+
+
+        <!-- Feature Section Start -->
+        <div class="grid mobile_view h-26vh">
+            <ul class="feature-section" style="padding-top:0px;">
+                <li class="li_feature li-animate1">
+                    <div class="feature-img">
+                        <img class="" src="img/Get Weekly Order List.svg" alt="...">
+                    </div>
+                    <div class="float-left">
+                        <h3 class="">1. Get Weekly Order List</h3>
+                        <p class="">View our 200+ healthy products <br>grown by trusted farmers.</p>
+                    </div>
+                </li>
+                <li class="li_feature li-animate2">
+                    <div class="feature-img">
+                        <img class="" src="img/Order & Pay Online.svg" alt="...">
+                    </div>
+                    <div class="float-left">
+                        <h3 class="">2. Order & Pay Online</h3>
+                        <p class="">Choose & Order what you need. <br>Pay online after delivery !</p>
+                    </div>
+                </li>
+                <li class="li_feature li-animate3">
+                    <div class="feature-img">
+                        <img class="" src="img/Home Delivery.svg" alt="...">
+                    </div>
+                    <div class="float-left">
+                        <h3 class="">3. Home Delivery</h3>
+                        <p class="">Convenient. Reliable. Straight<br> from farms to your home !</p>
+                    </div>
+                </li>
+                <li class="li_feature li-animate4">
+                    <div class="feature-img">
+                        <img class="" src="img/Know Your Farmers.svg" alt="...">
+                    </div>
+                    <div class="float-left">
+                        <h3 class="">4. Know Your Farmers</h3>
+                        <p class="">We use only traditional natural <br>farming practices. Visit Farm !</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+         <!-- Feature Section End -->
+
+
+
+
+     </div>
+  
+
+    <!-- Why Do People Love Us -->
+    <div class="grid grid-cols-12 sm:gap-4 gap-0 sm:gap-y-6 gap-y-0 love-us-section relative padding_top_harvest"  data-cues="fadeIn" style="padding-top: 0px;">
+        <!-- <div class="sm:col-span-4 col-span-12 pr-4 sm:pl-0 pl-4 health-section">
+            <h5 class="w-full float-left text-center sm:mt-20 mt-0">Are You Any Of The Following?</h5>
+            <img class="m-auto sm:pt-4 pt-4" src="img/health-conscious-quote.svg" style="width: 10%;">
+
+            <nav class="mobile-ui-menu"></nav>
+        
+            <div class="header-container"></div>
+
+            <div class="application-overview-hero-title-wrapper">
+                <div class="application-overview-hero-title">
+                    <span class="application-overview-hero-title-epithets">
+                                    <span class="application-overview-hero-title-epithets-item active">Health&nbsp;Conscious</span>
+                                    <span class="application-overview-hero-title-epithets-item ">Interested&nbsp;in&nbsp;Gardening</span>
+                                    <span class="application-overview-hero-title-epithets-item ">Farming&nbsp;Background</span>
+                                    <span class="application-overview-hero-title-epithets-item ">Sustainable</span>
+                                    <span class="application-overview-hero-title-epithets-item ">Eco&nbsp;friendly&nbsp;Living</span>
+                                    <span class="application-overview-hero-title-epithets-item ">Prefer&nbsp;chemical&nbsp;free</span>
+                            </span>&nbsp;
+                        </div>
+            </div>
+                   
+     
+
+
+            <a href="https://myharvestfarms.com/register/" style="width: 50%;margin: 0 auto; display: flex; background-color: #3B3B3B;border: 1px solid #3B3B3B;"
+            class=" button-color all-button sm:block hidden sm:inline-flex hidden whitespace-nowrap inline-flex button-color items-center justify-center px-4 py-1 rounded shadow-sm text-base font-medium text-white">
+             <button style="color: #FFFFFF;font-size: 14px;border:none">Join Myharvest Community</button>
+            </a>
+        </div> -->
+        <div class="col-span-12 sm:p-0 py-4" style="padding-top:30px;">
+            <div class="flex justify-between">
+                <h2 class="w-full float-left sm:mt-0 mt-4  sm:mb-0 mb-0 ">Why Do People Love Us?</h2>
+                <!-- <a href="#"
+                class="all-button sm:block hidden sm:inline-flex hidden whitespace-nowrap inline-flex button-color items-center justify-center px-4 py-1 border border-transparent rounded shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700">
+                    VIEW ALL
+                </a>  -->
+            </div>
+            <div id="love-us-section" class="owl-carousel owl-theme mt-4 people_block">
+               <a href="testimonial.html"><div class="item flex justify-start items-start sm:p-6 p-4 height-section">
+                    <div class="testimonial_img1">
+                        <img src="img/testimonial_img1.png" style="width: auto !important;">
+                        <div class="float-left w-full text-center">
+                            <h4 class="w-full float-left ">Dr Divya Vijay </h4>
+                            <p class=" float-left leading-6" style="width: 100% !important">Family / Chennai </p>
+                        </div>
+                    </div>
+                    <div class="w-full ml-8 mt-4"
+                       >
+                        <img class=" top-image" src="img/Tremendous-Efforts-quote.png" style="width: 6% !important;" alt="">
+                        <h3 class="w-full float-left  mt-4 mb-4">A doctor taking Healthcare  accessible to everyone</h3>
+                        <p class=" float-left ">I've been in love with the concept since day 1. And the lovely team only makes the whole experience a breeze. Our overall health has improved and we owe a big chunk to the Myharvest team! </p>
+                       
+                    </div>
+                </div></a> 
+                <a href="testimonial.html"> <div class="item flex justify-start items-start  sm:p-6 p-4 height-section">
+                    <div class="testimonial_img1">
+                        <img src="img/testimonial_img2.png" style="width: auto !important;">
+                        <div class="float-left text-center">
+                            <h4 class="w-full float-left ">Krithika Sukumar</h4>
+                            <p class=" float-left leading-6" style="width: 100% !important">Family / Chennai</p>
+                        </div>
+                    </div>
+                    
+                    <div class="w-full ml-8 mt-4"
+                       >
+                        <img class=" top-image" src="img/Good-Products-quote.svg" style="width: 6% !important;">
+                        <h3 class="w-full float-left  mt-4 mb-4">A loving Mom</h3>
+                        <p class=" float-left ">Always impressed with how responsive your team is. And it's interesting to hear about the farmers who grow our food. </p>
+                       
+                    </div>
+                   
+                </div></a>
+                <a href="testimonial.html"> <div class="item flex justify-start items-start  sm:p-6 p-4 height-section">
+                    <div class="testimonial_img1">
+                        <img src="img/testimonial_img3.png" style="width: auto !important;">
+                        <div class="float-left text-center">
+                            <h4 class="w-full float-left ">Vijayalakshmi Devarajan</h4>
+                            <p class=" float-left leading-6" style="width: 100% !important">Family / Chennai</p>
+                        </div>
+                    </div>
+                    <div class="w-full ml-8 mt-4"
+                       >
+                        <img class=" top-image " src="img/Good-Products-quote.svg" style="width: 6% !important;">
+                        <h3 class="w-full float-left  mt-4 mb-4">Women & Children empowerment Champion & a Motivational Speaker</h3>
+                        <p class=" float-left ">One of the great platform for Farmers, I am happy to be a part of it and I feel secured when I eat pest free vegetable.  Farmers and Parents are equal to god</p>
+                     
+                    </div>
+                   
+                </div></a>
+
+                <a href="testimonial.html"><div class="item flex justify-start items-start  sm:p-6 p-4 height-section">
+                    <div class="testimonial_img1">
+                        <img src="img/testimonial_img4.png" style="width: auto !important;">
+                        <div class="float-left text-center">
+                            <h4 class="w-full float-left ">Jeyappria </h4>
+                            <p class=" float-left leading-6" style="width: 100% !important">Family / Chennai</p>
+                        </div>
+                    </div>
+                    <div class="w-full ml-8 mt-4"
+                       >
+                        <img class=" top-image " src="img/Good-Products-quote.svg" style="width: 6% !important;">
+                        <h3 class="w-full float-left  mt-4 mb-4">Educator & Parenting Coach</h3>
+                        <p class=" float-left ">I love mhf community a lot. I love the dedication of everyone - and the food has started tasting so better since we purchased our veggies n fruits from mhf </p>
+                     
+                    </div>
+                   
+                </div></a>
+               
+            </div>
+        </div>
+    </div>
+    <!-- Why Do People Love Us -->
+
+
+
+            <!--Why myHarvest Farms section start-->
+            <div class="grid grid-cols-12 gap-6 gap-y-6 about-section relative overflow-hidden" style="padding-top:40px; padding-bottom: 30px;">
+                <div class="sm:col-span-5 col-span-12">
+                    <div data-cues="fadeIn">
+                        <h2 class=" w-full float-left sm:block hidden">Why myHarvest Farms</h2>
+                        <h4 class=" w-full float-left sm:hidden ">Why myHarvest</h4>
+                        <p class="sm:mb-8 mb-2 create_p w-full float-left">&#8220;Creating Healthier Families, Happier Farmers<br class=""> And A Sustainable Future Is Our Responsibility&#8221;</span>
+                    </div>
+                    
+                    <div class="grid grid-cols-12 sm:gap-3 gap-y-1 gap-x-3 sm:mt-12 mt-4 w-full" data-cues="slideInUp" data-group="process">
+                        <div class="sm:col-span-4 col-span-6  hover_block">
+                            <div class="about_area w-full float-left">
+                                <img clss="sm:w-16 m-auto" src="img/About_img/about1.svg">
+                            </div>
+                            <h6>100% Natural , Safe, <br class="hidden sm:block"> Chemical-Free</h6>
+                        </div>
+                        <div class="sm:col-span-4 col-span-6  hover_block">
+                            <div class="about_area w-full float-left">
+                                <img class="sm:w-20 m-auto" src="img/About_img/about2.svg">
+                            </div>
+                            <h6>Farm to Home<br class="hidden sm:block"> Buy Local</h6>
+                        </div>
+                        <div class="sm:col-span-4 col-span-6 hover_block">
+                            <div class="about_area w-full float-left">
+                                <img class="sm:w-16 m-auto" src="img/About_img/about3.svg">
+                            </div>
+                            <h6>200+ Products from <br class="hidden sm:block"> Trusted Farmers</h6>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-12 sm:gap-3 gap-y-1 gap-x-3" data-cues="slideInUp" data-group="process">
+                        <div class="sm:col-span-4 col-span-6 hover_block">
+                            <div class="about_area w-full float-left">
+                                <img class="sm:w-14 m-auto" src="img/About_img/about5.svg">
+                            </div>
+                            <h6>Know Your Farmer. <br class="hidden sm:block">Pay Fair Price</h6>
+                        </div>
+                        <div class="sm:col-span-4 col-span-6 hover_block">
+                            <div class="about_area w-full float-left">
+                                <img class="sm:w-16  m-auto" src="img/About_img/about6.svg">
+                            </div>
+                            <h6> Fresh Local Produce<br class="hidden sm:block">Enjoy Real Taste</h6>
+                        </div>
+                        <div class="sm:col-span-4 col-span-6 hover_block">
+                            <div class="about_area w-full float-left ">
+                                <img class="sm:w-16 m-auto" src="img/About_img/about7.svg">
+                            </div>
+                            <h6>Join & live<br class="hidden sm:block"> Healthy</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-7 mobile_view" data-cues="fadeIn">
+    
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/yTO2srKki8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                   <!-- <img class="about_img" src="img/why-myharvest-img.png">
+                   <div class="video_play_img">
+                       <img  class="modal-trigger" data-modal="modal-name" src="img/video_play_img.svg" style="width: 12% !important;">
+    
+    
+                    
+                       <div class="modal" id="modal-name">
+                         <div class="modal-sandbox"></div>
+                         <div class="modal-box">
+                           
+                           <div class="modal-body">
+                               <iframe width="560" height="315" src="https://www.youtube.com/embed/yTO2srKki8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                         </div>
+                       </div>
+                   </div> -->
+                </div>
+            </div>
+            <!--Why myHarvest Farms section end-->
+
+
+
+  <!--footer block start-->
+  <div class="grid grid-cols-12 sm:gap-6 gap-y-2 px-4 2xl:px-12 xl:px-10 lg:px:8 py-8 footer_block relative"  data-cues="fadeIn">
+    <div class="sm:col-span-3 col-span-12">
+        <div class="width_padding">
+            <!-- Col Title -->
+            <div class="footer_img mb-4">
+                <img src="img/footer_img.svg">
+            </div>
+            <a href="javascript:;" id="scrollToTop">
+                <img src="img/footer-end.svg" class="footer-end-img">
+            </a>   
+        </div>
+        <div class="footer_content">
+            <p>A Farm-To-Home Platform Making Safe Food Possible For All & Improving Farmer Livelihoods. We Are Transforming The Way Food Reaches Your Plate Through Community Farming.</p>
+        </div> 
+        <div class="md:flex-auto flex-row flex footer-icons-area w-full float-left mb-2">
+            <a href="https://www.facebook.com/myHarvestFarms/" target="_blank" class="w-6 mx-1 mr-5">
+                <i class="fa fa-facebook footer_icons" aria-hidden="true"></i>
+            </a>
+            <a href="https://twitter.com/myharvestfarms?lang=en" target="_blank" class="w-6 mx-1 mr-5">
+                <i class="fa fa-twitter footer_icons" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/myharvestfarms/" target="_blank" class="w-6 mx-1 mr-5">
+                <i class="fa fa-linkedin footer_icons" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/myharvestfarms/?hl=en" target="_blank" class="w-6 mx-1 mr-5">
+                <i class="fa fa-instagram footer_icons" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <div class="sm:col-span-2 col-span-12">
+        <div class="padding_width sm:ml-8 ml-0">
+            <!-- Col Title -->
+            <div class="footer_heading mb-2">
+                Learn More
+            </div>
+            <div class="line_area"></div>
+            <div class="grid grid-cols-12">
+                <div class=" sm:col-span-12 col-span-6">
+                    <!-- Links -->
+                    <ul class="footer_li">
+                        <li>
+                            <a href="about-us.html" class="footer_content">
+                                About Us
+                            </a>
+                        </li>                                  
+                        <li>
+                            <a href="https://shop.myharvestfarms.com/" class="footer_content">
+                                Products List
+                            </a>
+                        </li>
+                        <li>
+                            <a href="media-recognition.html" class="footer_content">
+                                Media
+                            </a>
+                        </li>
+                        <li>
+                            <a href="galleryfile.html" class="footer_content">
+                                Gallery
+                            </a>
+                        </li>
+                        <li>
+                            <a href="join-myharvest.html" class="footer_content">
+                                Join Myharvest
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sm:col-span-2 col-span-12">
+        <div class="padding_width">
+            <!-- Col Title -->
+            <div class="footer_heading mb-2">
+                Links
+            </div>
+            <div class="line_area"></div>
+            <div class="grid grid-cols-12">
+                <div class=" sm:col-span-12 col-span-6">
+                    <ul class="footer_li">     
+                        <li>
+                            <a href="privacy-policy.html" class="footer_content">
+                                Privacy Policy
+                            </a>
+                        </li>                                  
+                        <li>
+                            <a href="terms-and-condition.html" class="footer_content">
+                                Terms & Conditions
+                            </a>
+                        </li> 
+                        <li>
+                            <a href="contact-us.html" class="footer_content">
+                                Contact Us
+                            </a>
+                        </li>     
+                        <li>
+                            <a href="ourfarmers.html" class="footer_content">
+                                Our Farmers
+                            </a>
+                        </li>     
+                        <li>
+                            <a href="#" class="footer_content">
+                                Faq
+                            </a>
+                        </li>                
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sm:col-span-5 col-span-12">
+        <div class="padding_width">
+            <!-- Col Title -->
+            <div class="footer_heading mb-2">
+                Get In Touch
+            </div>
+            <div class="line_area"></div>
+                <div class="footer_content">
+                    <div class=" sm:col-span-12 col-span-6">
+                        <ul>
+                            <li class="tel"><i class="fa fa-phone" aria-hidden="true"></i> : 8220043502</li>
+                            <a href="mailto:%63omm%75nity@m%79har%76e%73t%66%61rm%73%2e%63%6fm">
+                                <li><i class="fa fa-envelope-o" aria-hidden="true"></i> : community@myharvestfarms.com</li> </a>
+                                <li class="w-full"><i class="fa fa-map-marker" aria-hidden="true"></i> :  22A - First Floor, Subhasree Nagar Extension 3, <br class="sm:block hidden">Mugalivakkam, Chennai - 600125</li>                        </ul>
+                    </div>
+                </div>                      
+        </div>
+    </div>
+</div>
+<div class="grid grid-cols-12 gap-6 sm:gap-y-6 gap-y-4 px-4 2xl:px-12 xl:px-10 lg:px:8 py-4 footer_background"  data-cues="fadeIn">
+    <div class="sm:col-span-6 col-span-12">
+        <div class="">
+            <div class="footer_copyright">
+                Copyright &#169 2021 Bhoominalam myHarvest Farms Pvt Ltd.
+            </div>
+        </div>
+    </div>
+    <div class="sm:col-span-6 col-span-12">
+        <div class="footer_copyright sm:float-right float-none">
+            Designed and Developed by<a href="https://vgts.tech/" target="_blank" style="color: #4B9D49;"> VGTS </a>
+        </div>
+    </div>
+</div>
+<!--footer block end-->
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script type='text/javascript'src='js/animation.js'></script>
+    <script>
+        $(document).ready(function(){
+            $(window).scroll(function () {
+    window.pageYOffset || document.documentElement.scrollTop, document.querySelector("body");
+    $(this).scrollTop() > 1 ? $("body").addClass("scroll-header") : $("body").removeClass("scroll-header")
+})
+
+        })
+     
+    </script>
+    <script src="js/aos.js"></script>
+
+		<script>
+			AOS.init({
+				once: true
+			});
+		</script>
+
+
+
+
+    <script src="js/owl.carousel.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/theme.js"></script>
+   
+    
+
+
+<script>
+    $(".modal-trigger").click(function(e){
+    e.preventDefault();
+    dataModal = $(this).attr("data-modal");
+    $("#" + dataModal).css({"display":"block"});
+    // $("body").css({"overflow-y": "hidden"}); //Prevent double scrollbar.
+  });
+
+  $(".close-modal, .modal-sandbox").click(function(){
+    $(".modal").css({"display":"none"});
+    // $("body").css({"overflow-y": "auto"}); //Prevent double scrollbar.
+  });
+</script>
+
+
+
+
+
+
+    <script>
+        window.document.onkeydown = function(e) {
+  if (!e) {
+    e = event;
+  }
+  if (e.keyCode == 27) {
+    lightbox_close();
+  }
+}
+
+function lightbox_open() {
+  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+  window.scrollTo(0, 0);
+  document.getElementById('light').style.display = 'block';
+  document.getElementById('fade').style.display = 'block';
+  lightBoxVideo.play();
+}
+
+function lightbox_close() {
+  var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+  document.getElementById('light').style.display = 'none';
+  document.getElementById('fade').style.display = 'none';
+  lightBoxVideo.pause();
+}
+        </script>
+
+    <!-- Slider Section Script End -->
+    <script>
+        $(document).ready(function () {
+
+            var $slider = $(".slider"),
+                $slideBGs = $(".slide__bg"),
+                diff = 0,
+                curSlide = 0,
+                numOfSlides = $(".slide").length - 1,
+                animating = false,
+                animTime = 500,
+                autoSlideTimeout,
+                autoSlideDelay = 3000,
+                $pagination = $(".slider-pagi");
+
+            function createBullets() {
+                for (var i = 0; i < numOfSlides + 1; i++) {
+                    var $li = $("<li class='slider-pagi__elem'></li>");
+                    $li.addClass("slider-pagi__elem-" + i).data("page", i);
+                    if (!i) $li.addClass("active");
+                    $pagination.append($li);
+                }
+            };
+
+            createBullets();
+
+            function manageControls() {
+                $(".slider-control").removeClass("inactive");
+                if (!curSlide) $(".slider-control.left").addClass("inactive");
+                if (curSlide === numOfSlides) $(".slider-control.right").addClass("inactive");
+            };
+
+            function autoSlide() {
+                autoSlideTimeout = setTimeout(function () {
+                    curSlide++;
+                    if (curSlide > numOfSlides) curSlide = 0;
+                    changeSlides();
+                }, autoSlideDelay);
+            };
+
+            autoSlide();
+
+            function changeSlides(instant) {
+                if (!instant) {
+                    animating = true;
+                    manageControls();
+                    $slider.addClass("animating");
+                    $slider.css("top");
+                    $(".slide").removeClass("active");
+                    $(".slide-" + curSlide).addClass("active");
+                    setTimeout(function () {
+                        $slider.removeClass("animating");
+                        animating = false;
+                    }, animTime);
+                }
+                window.clearTimeout(autoSlideTimeout);
+                $(".slider-pagi__elem").removeClass("active");
+                $(".slider-pagi__elem-" + curSlide).addClass("active");
+                $slider.css("transform", "translate3d(" + -curSlide * 100 + "%,0,0)");
+                $slideBGs.css("transform", "translate3d(" + curSlide * 50 + "%,0,0)");
+                diff = 0;
+                autoSlide();
+            }
+
+            function navigateLeft() {
+                if (animating) return;
+                if (curSlide > 0) curSlide--;
+                changeSlides();
+            }
+
+            function navigateRight() {
+                if (animating) return;
+                if (curSlide < numOfSlides) curSlide++;
+                changeSlides();
+            }
+
+            $(document).on("mousedown touchstart", ".slider", function (e) {
+                if (animating) return;
+                window.clearTimeout(autoSlideTimeout);
+                var startX = e.pageX || e.originalEvent.touches[0].pageX,
+                    winW = $(window).width();
+                diff = 0;
+
+                $(document).on("mousemove touchmove", function (e) {
+                    var x = e.pageX || e.originalEvent.touches[0].pageX;
+                    diff = (startX - x) / winW * 70;
+                    if ((!curSlide && diff < 0) || (curSlide === numOfSlides && diff > 0)) diff /= 2;
+                    $slider.css("transform", "translate3d(" + (-curSlide * 100 - diff) + "%,0,0)");
+                    $slideBGs.css("transform", "translate3d(" + (curSlide * 50 + diff / 2) + "%,0,0)");
+                });
+            });
+
+            $(document).on("mouseup touchend", function (e) {
+                $(document).off("mousemove touchmove");
+                if (animating) return;
+                if (!diff) {
+                    changeSlides(true);
+                    return;
+                }
+                if (diff > -8 && diff < 8) {
+                    changeSlides();
+                    return;
+                }
+                if (diff <= -8) {
+                    navigateLeft();
+                }
+                if (diff >= 8) {
+                    navigateRight();
+                }
+            });
+
+            $(document).on("click", ".slider-control", function () {
+                if ($(this).hasClass("left")) {
+                    navigateLeft();
+                } else {
+                    navigateRight();
+                }
+            });
+
+            $(document).on("click", ".slider-pagi__elem", function () {
+                curSlide = $(this).data("page");
+                changeSlides();
+            });
+        });
+    </script>
+    <!-- Slider Section Script End -->
+
+
+    <!-- Owl Carousel (people love us) Script Start -->
+
+    <script>
+         $(document).ready(function () {
+            var owl = $('#love-us-section');
+            owl.owlCarousel({
+                items: 2,
+                loop: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                responsiveClass: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    450: {
+                        items: 1,
+                        nav: true
+                    },
+                    1000: {
+                        items: 2,
+                        nav: true,
+                    }
+                }
+            });
+        })
+
+    </script>
+
+
+    <!-- Owl Carousel (people love us ) Script End -->
+
+
+    <script type = "text/javascript">
+        $(function () {
+            $('#scrollToTop').bind("click", function () {
+                $('html, body').animate({ scrollTop: 0 }, 1200);
+                return false;
+            });
+        });
+    </script>
+
+
+
+</body>
+
+</html>
