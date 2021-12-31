@@ -3560,3 +3560,7 @@ testimonial list style start */
   float: left;
   width: 20%;
 }
+
+.error {
+  color: rgb(255, 0, 0);
+}
