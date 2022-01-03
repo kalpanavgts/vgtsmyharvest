@@ -62,8 +62,8 @@ function callApicall() {
 
   //Button load
   document.getElementById("submitbtn").disabled = true;
-
   $.post("backend/mail/visitfarms.php", fordata, function (sucdata) {
+    Swal.fire('Form submitted');
     document.getElementById("visitform").reset();
     document.getElementById("submitbtn").disabled = false;
   });

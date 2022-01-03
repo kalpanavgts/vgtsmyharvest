@@ -51,10 +51,13 @@ $("#formvalidation")
   });
 
 function callApicall(fordata) {
+
+  Swal.fire('Any fool can use a computer');
    //Button load
    document.getElementById("submitbtn").disabled = true;
 
    $.post("backend/mail/sendmail.php", fordata, function (sucdata) {
+     Swal.fire('Form submitted');
      document.getElementById("formvalidation").reset();
      document.getElementById("submitbtn").disabled = false;
    });
