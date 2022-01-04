@@ -1,16 +1,14 @@
 <?php 
-include ("../config/database.php");
+include ("./config/database.php");
 
-$db = new DB();
-$data = $db->get("SELECT * FROM masters"); 
+function basicform(){
+  $db = new DB();
+  return $db->get("SELECT * FROM `basicform`");
+}
 
+function visitfarm(){
+  $db = new DB();
+  return $db->get("SELECT * FROM `visitfarm`");
+}
 
-if ($result = $data) {
-    while ($row = $result -> fetch_assoc()) {
-      echo $row["master_id"];
-      echo $row["master_name"];
-    }
-    $result -> free_result();
-  }
-  
 ?>
