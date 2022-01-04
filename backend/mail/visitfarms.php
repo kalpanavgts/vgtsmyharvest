@@ -1,11 +1,14 @@
 <?php
-header('Content-Type: application/json; charset=utf-8');
+
+
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require('../../vendor/autoload.php');
+include("../controllers/index.php");
+
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -52,8 +55,12 @@ Whoareyou : ".$whoareyou." <br/>
 </html>
 ";
 $mail->isHTML(true);
-$mail->send();
-echo json_encode((object) ["sent" => true, "message" => 'Message has been sent']);
+if(store_visitfarm($_REQUEST) == TRUE) {
+    $mail->send();
+    echo json_encode((object) ["sent" => true, "message" => 'Message has been sent']);
+}else{
+    echo json_encode((object) ["sent" => false, "message" => 'Something went wrong']);
+}
 
 } catch (Exception $e) {
 echo json_encode((object) ["sent" => false, "message" => $mail->ErrorInfo]);
