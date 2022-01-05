@@ -33,7 +33,7 @@ $("#formvalidation")
   });
 
 function callApicall(fordata) {
-   $.post("../admin/controllers/index.php", fordata, function (sucdata) {
-     
+   $.post("../backend/controllers/index.php?login=true", fordata, function (sucdata) {
+      window.location = "../admin/visitfarm.php";
    });
 }

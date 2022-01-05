@@ -1,5 +1,6 @@
-<?php 
-include("./controllers/index.php")
+<?php
+include("./middleware/session.php");
+include("./controllers/index.php");
 ?>
 
 <!DOCTYPE html>

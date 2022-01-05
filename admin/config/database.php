@@ -1,5 +1,6 @@
 
 <?php
+session_start();
 class DB {
     // Properties
     private $servername = "localhost";
@@ -38,19 +39,21 @@ class DB {
     public function login($REQ){
         // Request filtering
         $con = $this->mysqli();
-        $filtered_email = $con->real_escape_string($_POST['email']);
+        $filtered_email = $con->real_escape_string($_POST['mail']);
         $filtered_password = $con->real_escape_string($_POST['password']);
 
-        $loginquery = "SELECT id FROM user WHERE email='".$filtered_email."' AND password='".$filtered_password."' LIMIT 1";
+        $loginquery = "SELECT * FROM user WHERE email='".$filtered_email."' AND password='".$filtered_password."' LIMIT 1";
         $result = $this->get($loginquery);
 
-        if($result->field_count()){
-            $this->session_users = $result -> fetch_assoc();
+
+        // check if reset does have any count of rows
+        if(gettype($result->fetch_row()) == 'NULL'){
+            echo json_encode((object) ["loggined_in" => false, "message" => 'Credentials not valid']);
+        }else{
+            $this->session_users = $result -> fetch_all(MYSQLI_ASSOC);
             $_SESSION["session_users"] = $this->session_users;
             $_SESSION["loggined_in"] = true;
-            echo json_encode((object) ["loggined_in" => true, "message" => 'Message has been sent']);
-        }else{
-            echo json_encode((object) ["loggined_in" => false, "message" => 'Credentials not valid']);
+            echo json_encode((object) ["loggined_in" => true, "message" => 'Logged in successfully']);
         }
     }
     

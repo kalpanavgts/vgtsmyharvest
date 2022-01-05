@@ -1,6 +1,7 @@
 <?php 
 include ("../../admin/config/database.php");
 
+// Function declaration start
 function store_visitfarm($REQ){
   $db = new DB();
   $con = $db->mysqli();
@@ -56,5 +57,27 @@ function store_basicform($REQ){
   return $db->post($insertQuery);
 }
 
+
+function login($REQ){
+  $db = new DB();
+  if($db->login($REQ) == TRUE){
+    echo "<script type='text/javascript'> alert('success')</script>";
+  }else{
+    echo "<script type='text/javascript'> alert('not valid')</script>";
+  }
+}
+
+// Function declaration end
+
+
+
+
+// Function call start
+
+if(isset($_REQUEST['login']) && $_REQUEST['login'] == TRUE){
+  login($_REQUEST);
+}
+
+// Function call end
 
 ?>
