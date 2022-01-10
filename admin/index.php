@@ -53,7 +53,7 @@
 
 <script src="../js/jquery.min.js" type="text/javascript"></script>
 <script src="../js/jquery.validate.min.js" type="text/javascript"></script>
-<script src="../js/additional-methods.min" type="text/javascript"></script>
+<script src="../js/additional-methods.min.js" type="text/javascript"></script>
 <script src="js/pages/index.js" type="text/javascript"></script>
 
 </body>

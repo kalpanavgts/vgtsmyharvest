@@ -67,6 +67,13 @@ function login($REQ){
   }
 }
 
+function getGoogledoclink(){
+  $db = new DB();
+  $queried = $db->get("SELECT `link` FROM `googledoclink` WHERE id = 1");
+  $fetched = $queried->fetch_object();
+  echo json_encode($fetched);
+}
+
 // Function declaration end
 
 
@@ -76,6 +83,10 @@ function login($REQ){
 
 if(isset($_REQUEST['login']) && $_REQUEST['login'] == TRUE){
   login($_REQUEST);
+}
+
+if(isset($_REQUEST['googledoclink']) && $_REQUEST['googledoclink'] == TRUE){
+  getGoogledoclink();
 }
 
 // Function call end

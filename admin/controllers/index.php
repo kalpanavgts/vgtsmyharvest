@@ -12,5 +12,9 @@ function visitfarm(){
   return $db->get("SELECT * FROM `visitfarm`");
 }
 
-// Function declaration end
+function getGoogledoclink(){
+  $db = new DB();
+  $queried = $db->get("SELECT `link` FROM `googledoclink` WHERE id = 1");
+  return $queried->fetch_object();
+}
 ?>

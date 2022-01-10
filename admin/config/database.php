@@ -35,6 +35,10 @@ class DB {
         return $this->mysqli()->query($sql);
     }
 
+    public function update($sql) {
+        return $this->mysqli()->query($sql);
+    }
+
 
     public function login($REQ){
         // Request filtering
