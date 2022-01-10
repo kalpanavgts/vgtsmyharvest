@@ -26,15 +26,17 @@ $whoareyou = $_REQUEST['whoareyou'];
 $mail->isSMTP(); 
 $mail->SMTPAuth   = true;                                 
 $mail->Host       = 'smtp.gmail.com';                     
-$mail->Username   = 'vgts.dev@gmail.com';                 
-$mail->Password   = 'vredpzyrhotllflu';                   
+$mail->Username   = 'community@myharvestfarms.com';                 
+$mail->Password   = 'myHarvest2020$%';             
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
 $mail->Port       = 465;
 
 //Recipients
 $mail->addAddress('nesanoctact@gmail.com', 'nesamani');
+$mail->addAddress('community@myharvestfarms.com', 'myharvest community');
+$mail->addAddress('archana@myharvestfarms.com', 'Archana');
 $mail->addAddress('kalpana@vgts.tech', 'kalpana');
-$mail->SetFrom('fromgmail@gmail.com', 'My Harvest');                                
+$mail->SetFrom('fromgmail@gmail.com', 'My Harvest');                           
 $mail->Subject = 'Here is the subject';
 $mail->Body=
 "<!DOCTYPE html>
