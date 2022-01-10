@@ -1,11 +1,14 @@
 <?php
-header('Content-Type: application/json; charset=utf-8');
+
+
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 require('../../vendor/autoload.php');
+include("../controllers/index.php");
+
 
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
@@ -23,15 +26,17 @@ $whoareyou = $_REQUEST['whoareyou'];
 $mail->isSMTP(); 
 $mail->SMTPAuth   = true;                                 
 $mail->Host       = 'smtp.gmail.com';                     
-$mail->Username   = 'vgts.dev@gmail.com';                 
-$mail->Password   = 'vredpzyrhotllflu';                   
+$mail->Username   = 'community@myharvestfarms.com';                 
+$mail->Password   = 'myHarvest2020$%';             
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;          
 $mail->Port       = 465;
 
 //Recipients
 $mail->addAddress('nesanoctact@gmail.com', 'nesamani');
+$mail->addAddress('community@myharvestfarms.com', 'myharvest community');
+$mail->addAddress('archana@myharvestfarms.com', 'Archana');
 $mail->addAddress('kalpana@vgts.tech', 'kalpana');
-$mail->SetFrom('fromgmail@gmail.com', 'My Harvest');                                
+$mail->SetFrom('fromgmail@gmail.com', 'My Harvest');                           
 $mail->Subject = 'Here is the subject';
 $mail->Body=
 "<!DOCTYPE html>
@@ -52,8 +57,12 @@ Whoareyou : ".$whoareyou." <br/>
 </html>
 ";
 $mail->isHTML(true);
-$mail->send();
-echo json_encode((object) ["sent" => true, "message" => 'Message has been sent']);
+if(store_visitfarm($_REQUEST) == TRUE) {
+    $mail->send();
+    echo json_encode((object) ["sent" => true, "message" => 'Message has been sent']);
+}else{
+    echo json_encode((object) ["sent" => false, "message" => 'Something went wrong']);
+}
 
 } catch (Exception $e) {
 echo json_encode((object) ["sent" => false, "message" => $mail->ErrorInfo]);

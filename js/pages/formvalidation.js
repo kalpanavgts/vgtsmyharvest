@@ -51,8 +51,6 @@ $("#formvalidation")
   });
 
 function callApicall(fordata) {
-
-  Swal.fire('Any fool can use a computer');
    //Button load
    document.getElementById("submitbtn").disabled = true;
 

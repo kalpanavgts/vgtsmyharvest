@@ -1,16 +1,20 @@
 <?php 
-include ("../config/database.php");
+include ("./config/database.php");
 
-$db = new DB();
-$data = $db->get("SELECT * FROM masters"); 
+// Function declaration start
+function basicform(){
+  $db = new DB();
+  return $db->get("SELECT * FROM `basicform`");
+}
 
+function visitfarm(){
+  $db = new DB();
+  return $db->get("SELECT * FROM `visitfarm`");
+}
 
-if ($result = $data) {
-    while ($row = $result -> fetch_assoc()) {
-      echo $row["master_id"];
-      echo $row["master_name"];
-    }
-    $result -> free_result();
-  }
-  
+function getGoogledoclink(){
+  $db = new DB();
+  $queried = $db->get("SELECT `link` FROM `googledoclink` WHERE id = 1");
+  return $queried->fetch_object();
+}
 ?>
