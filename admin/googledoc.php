@@ -12,14 +12,33 @@ $data = getGoogledoclink();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin || Visit Form</title>
 </head>
+<style>
+  .login_form
+{
+  margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding:30px;
+    border-radius: 10px;
+    border: 1px solid #000;
+    float: left;
+    width:25%;
+}
+.login_input
+{
+  padding:12px;
+}
+</style>
 <body>
     
-
-<form >
+<div class="w-full m-auto h-screen flex">
+<form  class="login_form">
   <label for="fname">Link</label><br>
   <textarea type="text" id="googlelink" name="googlelink"><?php echo $data->link; ?></textarea>
-  <input type="button" value="Update" onclick="updateLink()">
+  <input class="login_input" type="button" value="Update" onclick="updateLink()">
 </form>
+</div>
+
 
 <script type="text/javascript" src="./js/jquery.min.js"> </script>
 <script type="text/javascript">
