@@ -1,6 +1,7 @@
 
 <?php
 session_start();
+
 class DB {
     // Properties
     private $servername = "localhost";
@@ -12,6 +13,8 @@ class DB {
     // private $username = "root";
     // private $password = "";
     // private $database = "myharvest";
+
+    
 
     // Create connection
     public function mysqli() {
