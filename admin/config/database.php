@@ -4,10 +4,14 @@ session_start();
 class DB {
     // Properties
     private $servername = "localhost";
-    private $username = "root";
-    private $password = "";
-    private $database = "myharvest";
-    private $session_users;
+    private $username = "myharv_website";
+    private $password = "harv@admin1234";
+    private $database = "myharv_website";
+
+    // private $servername = "localhost";
+    // private $username = "root";
+    // private $password = "";
+    // private $database = "myharvest";
 
     // Create connection
     public function mysqli() {
