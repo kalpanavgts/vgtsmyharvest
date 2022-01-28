@@ -13,7 +13,6 @@ class DB {
     // private $username = "root";
     // private $password = "";
     // private $database = "myharvest";
-    private $session_users;
 
     
 
